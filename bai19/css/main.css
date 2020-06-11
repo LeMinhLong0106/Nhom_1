@@ -2,7 +2,7 @@
     --container-height: 650px;
 }
 body{
-    background-image: url(./Multimedia/anh1.jpg);
+    background-image: url(../assets/anh1.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -18,7 +18,7 @@ body{
     height: 125px;
     border-radius: 3px;
     margin-top: 8px;
-    background-image: url(./Multimedia/multiplebackground-1.jpg);
+    background-image: url(../assets/multiplebackground-1.jpg);
 }
 .header-title{
     font-style: italic;
@@ -36,7 +36,7 @@ body{
     margin-top: 8px;
     border-radius: 3px;
     height: var(--container-height);
-    background-image: url(./Multimedia/multiplebackground-1.jpg);
+    background-image: url(../assets/multiplebackground-1.jpg);
 }
 .sign-in{
     position: relative;
@@ -144,7 +144,7 @@ input{
     border-radius: 3px;
     margin-top: 8px;
     margin-left: 8px;
-    background-image: url(./Multimedia/multiplebackground-1.jpg);
+    background-image: url(../assets/multiplebackground-1.jpg);
 }
 
 .nav-date-time{
@@ -161,7 +161,7 @@ input{
 }
 .navbar-list-item-separate::after{ /* Dấu gạch dọc sau Kết nối và Đăng ký */
     content: "";
-    border-right: 8px solid rgb(55, 178, 226);
+    border-right: 8px solid rgb(255, 145, 2);
     border-radius: 5px;
     height: 80px;
     margin-left: 82px;
@@ -173,7 +173,7 @@ input{
 }
 .nav-link{
     text-decoration: none;
-    color: rgb(55, 178, 226);
+    color: rgb(255, 145, 2);
 }
 .content-one{
     float: left;
@@ -182,7 +182,7 @@ input{
     border-radius: 3px;
     margin-top: 8px;
     margin-left: 8px;
-    background-image: url(./Multimedia/multiplebackground-1.jpg);
+    background-image: url(../assets/multiplebackground-1.jpg);
 }
 .content-two{
     float: left;
@@ -191,7 +191,7 @@ input{
     border-radius: 3px;
     margin-top: 8px;
     margin-left: 8px;
-    background-image: url(./Multimedia/multiplebackground-1.jpg);
+    background-image: url(../assets/multiplebackground-1.jpg);
 }
 .main-content{
     height: 100%;
@@ -216,5 +216,15 @@ input{
     height: 120px;
     border-radius: 3px;
     margin-top: 8px;
-    background-image: url(./Multimedia/multiplebackground-1.jpg);
+    background-image: url(../assets/multiplebackground-1.jpg);
+}
+.footer-title-one{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 19px;
+}
+.footer-title-two{
+    line-height: 30px;
+    text-align: center;
+    font-size: 19px;
 }

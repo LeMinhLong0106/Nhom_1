@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./fontawesome-free-5.12.1/fontawesome-free-5.12.1-web/css/all.min.css">
-    <link rel="stylesheet" href="./reset200802.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset200802.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <div class="grid">
@@ -69,8 +69,17 @@
             <!-- Content -->
             <div class="navbar">
                 <div style="height: 40px;">
-                    <span class="nav-date-time"> Ngày 08 tháng 06 năm 2020</span> 
+                    <span class="nav-date-time"> Ngày <span id="days"></span> tháng <span id="month"></span> năm <span id="year"></span></span> 
                 </div>
+                <script>
+                    var n = new Date();
+                    var d = n.getUTCDay() + 7;
+                    document.getElementById("days").innerHTML = d;
+                    var m = n.getUTCMonth() + 1;
+                    document.getElementById("month").innerHTML = m;
+                    var y = n.getUTCFullYear();
+                    document.getElementById("year").innerHTML = y;
+                </script>                
                 <hr style="width: 90%;">
                 <div>                   
                     <ul class="nav-list">
@@ -78,10 +87,10 @@
                             <a href=" " class="nav-link">Home</a>
                         </li>
                         <li class="nav-item navbar-list-item-separate">
-                            <a href="" class="nav-link">Sách bán chạy</a>
+                            <a href="./sachbanchay.html" class="nav-link" target="sachbanchay">Sách bán chạy</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Sách giảm giá</a>
+                            <a href="./sachgiamgia.html" class="nav-link" target="sachgiamgia">Sách giảm giá</a>
                         </li>
                     </ul>
                 </div>
@@ -93,7 +102,7 @@
             </div>
             <div class="content-two">
                 <h2 style="font-weight: 800; font-size: 25px; margin-left: 25px;font-weight: 600;font-size: 25px;
-                margin-top: 32px">Sách bán chạy</h2>
+                margin-top: 32px; color: rgb(55, 178, 226);">Sách bán chạy</h2>
                 <!-- <ol class="content-list">
                     <li class="content-item">1.
                         <a href="./Laptrinh.html" class="content-link" target="main-content">Lập trình</a>
@@ -105,12 +114,12 @@
                         <a href="./Tinhoc.html" class="content-link" target="main-content">Tin học</a>
                     </li>
                 </ol> -->
-                <iframe src="" frameborder="0">
+                <iframe src="" frameborder="0" style="width: 100%; height: 35%;" name="sachbanchay">
                     
                 </iframe>
                 <h2 style="font-weight: 800; font-size: 25px; margin-left: 25px;font-weight: 600;font-size: 25px;
-                margin-top: 32px">Sách giảm giá</h2>
-                <ol class="content-list">
+                margin-top: 32px; color: rgb(55, 178, 226);">Sách giảm giá</h2>
+                <!-- <ol class="content-list">
                     <li class="content-item">1.
                         <a href="./Phapluat.html" class="content-link" target="main-content">Pháp luật</a>
                     </li>
@@ -120,12 +129,20 @@
                     <li class="content-item">3.
                         <a href="./Dialy.html" class="content-link" target="main-content">Địa lý</a>
                     </li>
-                </ol>
+                </ol> -->
+                <iframe src="" frameborder="0" style="width: 100%; height: 35%;" name="sachgiamgia">
+                    
+                </iframe>
             </div>
         </div>
         <!-- Footer -->
         <div class="footer">
-
+            <h3 class="footer-title-one">
+                Bản quyền &copy; by Mang Bảo. <br>
+            </h3>
+            <h3 class="footer-title-two">
+                Email liên hệ: nhom1@gmail.com
+            </h3>
         </div>
     </div>
 </body>
