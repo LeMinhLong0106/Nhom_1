@@ -1,0 +1,63 @@
+#khung{
+	width: 900px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+header{
+	width:100%;
+	height: 120px;
+	background-image: url("bautroi.jpg");
+	background-repeat: repeat-x;
+	float: left;
+}
+nav{
+	width: 20%;
+	height: 75vh;
+	float: right;
+}
+p{
+	font: bold 120% Tahoma;
+}
+section{
+	width: 55%;
+	height: 75vh;
+	float: left;
+}
+aside{
+	width: 25%;
+	height: 75vh;
+	float: left;
+}
+footer{
+	width: 900px;
+	height: 50px;
+	float: left;
+	background-color: red;
+}
+li{
+	font: 100 15pt "Times New Roman"
+}
+#td{
+	color: pink;
+	font-size: 30px;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	padding: 5px;
+}
+h2{
+	font-weight: bold;
+	margin: 30px;
+}
+section img{
+	width: 20%;
+	height: auto;
+}
+footer span{
+	text-align: center;
+}
+#ft{
+	text-align: center;
+}
+#a1{
+	width: 80%;
+	height: auto;
+}
